@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NORI</title>
+<meta name="description" content="NORI — 日本国内のパーティー・音楽イベント・交流会を発見して参加登録、チケット購入、QR入場までできるアプリ。" />
+<style>
+  :root {
+    --bg: #ffffff; --fg: #14151a; --muted: #5c6270; --card: #f6f7f9;
+    --border: #e6e8ec; --accent: #ff5a3c; --accent-fg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1115; --fg: #f2f3f5; --muted: #9aa1ad; --card: #171a20;
+      --border: #262b33; --accent: #ff6a4d; --accent-fg: #14151a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.75; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  header.hero { padding: 96px 0 64px; text-align: center; }
+  .logo { font-size: 44px; font-weight: 800; letter-spacing: 0.06em; margin: 0 0 8px; }
+  .tagline { color: var(--muted); font-size: 18px; margin: 0 auto; max-width: 32em; }
+  .badge { display: inline-block; margin-top: 28px; padding: 8px 16px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  section { padding: 40px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 22px; margin: 0 0 16px; }
+  .features { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 560px) { .features { grid-template-columns: 1fr; } }
+  .feature { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+  .feature h3 { margin: 0 0 6px; font-size: 16px; }
+  .feature p { margin: 0; color: var(--muted); font-size: 14px; }
+  footer { padding: 48px 0 72px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+  footer a { color: var(--fg); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .links { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 12px; }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1 class="logo">NORI</h1>
+      <p class="tagline">日本国内のパーティー・音楽イベント・交流会を見つけて、参加登録・チケット購入・QR入場まで。行きたいをすぐ行動に。</p>
+      <div class="badge">iOS 向けアプリ（TestFlight で提供中）</div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>NORI でできること</h2>
+      <div class="features">
+        <div class="feature"><h3>イベントを発見</h3><p>近くのパーティーや音楽イベント、交流会を探して詳細をチェック。</p></div>
+        <div class="feature"><h3>かんたん参加登録</h3><p>気になるイベントにその場で参加登録。誰が来るかも見られます。</p></div>
+        <div class="feature"><h3>チケット購入・QR入場</h3><p>チケットを購入し、当日はQRコードでスムーズに入場。</p></div>
+        <div class="feature"><h3>自分で主催</h3><p>イベントを作成すれば、あなたがそのイベントの主催者に。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>© 2026 NORI</div>
+      <div class="links">
+        <a href="./privacy.html">プライバシーポリシー</a>
+        <a href="./terms.html">利用規約</a>
+        <a href="mailto:luke.nicholls.2005.1202@gmail.com">お問い合わせ</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
