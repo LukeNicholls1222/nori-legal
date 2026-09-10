@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>プライバシーポリシー | NORI</title>
-<meta name="description" content="NORI のプライバシーポリシー。収集する情報、利用目的、第三者への提供、ユーザーの権利について説明します。" />
+<meta name="description" content="NORI のプライバシーポリシー。取得する情報、利用目的、主催者・決済代行への提供、保存期間、本人の権利について説明します。" />
 <style>
   :root { --bg:#fff; --fg:#14151a; --muted:#5c6270; --card:#f6f7f9; --border:#e6e8ec; --accent:#ff5a3c; }
   @media (prefers-color-scheme: dark) {
@@ -14,21 +14,23 @@
   body { margin:0; background:var(--bg); color:var(--fg);
     font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Segoe UI",Roboto,sans-serif;
     line-height:1.85; -webkit-font-smoothing:antialiased; }
-  .wrap { max-width:720px; margin:0 auto; padding:0 24px; }
+  .wrap { max-width:760px; margin:0 auto; padding:0 24px; }
   header { padding:56px 0 24px; border-bottom:1px solid var(--border); }
   .home { color:var(--muted); font-size:14px; }
   h1 { font-size:30px; margin:16px 0 6px; }
   .updated { color:var(--muted); font-size:14px; margin:0; }
-  main { padding:32px 0 24px; }
-  h2 { font-size:20px; margin:36px 0 12px; }
-  p, li { color:var(--fg); }
+  main { padding:8px 0 24px; }
+  h2 { font-size:21px; margin:36px 0 10px; }
+  p, li { color:var(--fg); font-size:16px; }
+  .lead { color:var(--muted); }
   .muted { color:var(--muted); }
-  ul { padding-left:1.3em; }
+  ul { padding-left:1.4em; }
   li { margin:6px 0; }
   a { color:var(--accent); }
   table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
   th, td { text-align:left; padding:10px 12px; border:1px solid var(--border); vertical-align:top; }
   th { background:var(--card); }
+  .overflow { overflow-x:auto; }
   footer { padding:32px 0 72px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; }
   footer a { color:var(--fg); }
 </style>
@@ -44,65 +46,72 @@
 
   <main>
     <div class="wrap">
-      <p>NORI（以下「本アプリ」）は、日本国内のパーティー・音楽イベント・交流会を発見し、参加登録、チケット購入、QR入場などを行うためのアプリです。本ポリシーは、本アプリの運営者（以下「当方」）が、本アプリの利用にあたって取得する情報とその取り扱いについて定めるものです。</p>
+      <p class="lead">NORI（以下「本サービス」）の運営者（以下「当方」）は、本サービスの提供にあたり取得する利用者の情報を、本ポリシーに従って適切に取り扱います。</p>
 
       <h2>1. 取得する情報</h2>
-      <p>当方は、本アプリの提供のために必要な範囲で、以下の情報を取得します。</p>
+      <div class="overflow">
       <table>
-        <tr><th>種類</th><th>具体例</th><th>目的</th></tr>
-        <tr><td>アカウント情報</td><td>メールアドレス、氏名・ニックネーム、プロフィール画像</td><td>アカウント作成・本人確認・表示</td></tr>
-        <tr><td>認証識別子</td><td>Google／Apple のアカウント識別子、当方が発行するユーザーID</td><td>ログイン・認証</td></tr>
-        <tr><td>イベント・購入情報</td><td>参加登録したイベント、チケットの購入履歴</td><td>参加管理・チケット発行・入場</td></tr>
-        <tr><td>ユーザー投稿コンテンツ</td><td>写真・動画、イベントに関する投稿</td><td>プロフィール・イベント表示</td></tr>
-        <tr><td>端末情報</td><td>デバイス識別子、プッシュ通知トークン</td><td>通知配信・不正防止・動作改善</td></tr>
+        <tr><th>種類</th><th>具体例</th><th>取得方法</th></tr>
+        <tr><td>アカウント情報</td><td>メールアドレス、氏名・ニックネーム、プロフィール画像</td><td>登録時にご本人から</td></tr>
+        <tr><td>認証識別子</td><td>Google／Apple のアカウント識別子、当方が発行するユーザーID</td><td>ソーシャルログイン利用時</td></tr>
+        <tr><td>イベント・購入情報</td><td>参加登録したイベント、チケットの購入履歴、注文額・注文番号</td><td>利用時に自動</td></tr>
+        <tr><td>ユーザー投稿コンテンツ</td><td>写真・動画、イベント説明、自己紹介、通報内容</td><td>投稿時にご本人から</td></tr>
+        <tr><td>端末情報</td><td>デバイス識別子、プッシュ通知トークン</td><td>利用時に自動</td></tr>
       </table>
-      <p class="muted">本アプリは、広告目的やクロスサイト・クロスアプリのトラッキングのために情報を利用しません。</p>
+      </div>
+      <p class="muted">当方は、広告目的やクロスサイト・クロスアプリのトラッキングのために情報を利用しません。カード番号等の決済情報は決済代行事業者が直接取り扱い、当方のサーバーには保存されません。</p>
 
       <h2>2. 利用目的</h2>
       <ul>
-        <li>本アプリの機能（アカウント認証、イベントの発見・参加登録、チケット購入、QR入場、通知）の提供</li>
+        <li>本サービスの機能（アカウント認証、イベントの発見・参加登録、チケット購入・発券・入場、通知）の提供</li>
         <li>ユーザーサポートおよびお問い合わせへの対応</li>
-        <li>不正利用の防止、および本アプリの安全性・品質の維持向上</li>
+        <li>不正利用の防止、本サービスの安全性・品質の維持向上</li>
         <li>法令上の義務の遵守</li>
       </ul>
 
-      <h2>3. Googleアカウントでのログインについて</h2>
-      <p>Googleアカウントでログインを行う場合、当方は Google から、あなたの基本的なプロフィール情報（氏名、メールアドレス、プロフィール画像、Googleアカウント識別子）を取得します。取得した情報はアカウントの作成・認証・本アプリ内での表示にのみ利用し、上記の目的の範囲を超えて利用しません。Google API から取得した情報の利用は、<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API サービスのユーザーデータに関するポリシー</a>（Limited Use を含む）に準拠します。</p>
+      <h2>3. Google／Apple アカウントでのログイン</h2>
+      <p>ソーシャルログインを利用する場合、当方は Google または Apple から、氏名、メールアドレス、プロフィール画像、アカウント識別子等の基本的なプロフィール情報を取得します。取得した情報はアカウントの作成・認証・本サービス内での表示にのみ利用します。Google API から取得した情報の利用は、<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API サービスのユーザーデータに関するポリシー</a>（Limited Use を含む）に準拠します。</p>
 
-      <h2>4. 第三者への提供・業務委託</h2>
-      <p>当方は、法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供しません。ただし、本アプリの提供に必要な範囲で、以下の外部サービスにデータの処理を委託しています。</p>
+      <h2>4. 主催者への情報提供</h2>
+      <p>参加者がイベントに参加登録・チケット購入を行った場合、当方は、イベント運営に必要な範囲で、参加者の氏名・メールアドレス・参加状況等を当該イベントの主催者に提供します。提供の目的は、イベントの中止・変更の連絡、返金対応、入場時の本人確認等です。主催者が取得した情報の取り扱いは、主催者自身の責任および主催者のプライバシーポリシーによります。</p>
+
+      <h2>5. 業務委託・第三者提供</h2>
+      <p>当方は、法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供しません。ただし、本サービスの提供に必要な範囲で、以下の外部サービスに処理を委託しています。</p>
       <ul>
         <li><strong>Supabase</strong>（認証・データベース・ストレージ基盤）</li>
-        <li><strong>Stripe</strong>（チケット決済の処理。カード情報は Stripe が処理し、当方は保持しません）</li>
+        <li><strong>Stripe</strong>（決済処理。カード情報は Stripe が直接取り扱います）</li>
         <li><strong>Google／Apple</strong>（ソーシャルログインによる認証）</li>
         <li><strong>Expo</strong>（プッシュ通知の配信）</li>
         <li><strong>Google Maps</strong>（地図・位置の表示）</li>
       </ul>
 
-      <h2>5. データの保管と国際移転</h2>
-      <p>取得した情報は、上記の委託先が管理するサーバーに保管されます。これらのサーバーは日本国外に所在する場合があり、その場合、情報は国境を越えて移転・保管されることがあります。当方および委託先は、適切な安全管理措置を講じます。</p>
+      <h2>6. データの保管と国際移転</h2>
+      <p>取得した情報は、上記委託先が管理するサーバーに保管されます。これらのサーバーは日本国外に所在する場合があり、その場合、情報は国境を越えて移転・保管されることがあります。当方および委託先は、適切な安全管理措置を講じます。</p>
 
-      <h2>6. データの保存期間と削除</h2>
-      <p>取得した情報は、利用目的の達成に必要な期間、または法令で求められる期間保管します。アカウントの削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。合理的な期間内に、法令上保持が必要なものを除き、あなたのアカウントおよび関連情報を削除します。</p>
+      <h2>7. 保存期間と削除</h2>
+      <p>取得した情報は、利用目的の達成に必要な期間、または法令で求められる期間保管します。アカウントの削除をご希望の場合はアプリ内の退会手続または下記お問い合わせ先までご連絡ください。法令上保持が必要なもの（取引記録等）を除き、合理的な期間内に削除します。</p>
 
-      <h2>7. ユーザーの権利</h2>
-      <p>あなたは、当方が保有するご自身の個人情報について、開示・訂正・利用停止・削除を求めることができます。ご希望の場合は下記のお問い合わせ先までご連絡ください。</p>
+      <h2>8. 安全管理措置</h2>
+      <p>当方は、取得した情報の漏えい・滅失・毀損の防止その他の安全管理のために、必要かつ適切な措置を講じます。通信は暗号化（HTTPS）により保護されます。</p>
 
-      <h2>8. 未成年の方の利用</h2>
-      <p>未成年の方が本アプリを利用する場合は、保護者の同意を得たうえでご利用ください。</p>
+      <h2>9. ご本人の権利</h2>
+      <p>ご本人は、当方が保有するご自身の個人情報について、開示・訂正・利用停止・削除を求めることができます。ご希望の場合は下記お問い合わせ先までご連絡ください。ご本人であることを確認したうえで、法令に従い対応します。</p>
 
-      <h2>9. 本ポリシーの変更</h2>
-      <p>当方は、必要に応じて本ポリシーを変更することがあります。重要な変更を行う場合は、本ページ上でお知らせします。変更後の本ポリシーは、本ページに掲載した時点から効力を生じます。</p>
+      <h2>10. 未成年者について</h2>
+      <p>未成年の方は、親権者等の法定代理人の同意を得たうえでご利用ください。</p>
 
-      <h2>10. お問い合わせ</h2>
-      <p>本ポリシーおよび個人情報の取り扱いに関するお問い合わせは、以下までご連絡ください。<br />
+      <h2>11. 本ポリシーの変更</h2>
+      <p>当方は、必要に応じて本ポリシーを変更することがあります。重要な変更を行う場合は本ページで周知し、変更後のポリシーは掲載時点から効力を生じます。</p>
+
+      <h2>12. お問い合わせ</h2>
+      <p>個人情報の取り扱いに関するお問い合わせ・開示等の請求は、以下までご連絡ください。<br />
       メール：<a href="mailto:luke.nicholls.2005.1202@gmail.com">luke.nicholls.2005.1202@gmail.com</a></p>
     </div>
   </main>
 
   <footer>
     <div class="wrap">
-      <a href="./index.html">NORI ホーム</a> ・ <a href="./terms.html">利用規約</a>
+      <a href="./index.html">NORI ホーム</a> ・ <a href="./terms.html">利用規約</a> ・ <a href="./refund.html">キャンセル・返金</a> ・ <a href="./tokushoho.html">特定商取引法に基づく表記</a>
     </div>
   </footer>
 </body>
